@@ -17,8 +17,8 @@
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/variables.scss' as *;
-@use '../assets/scss/mixins.scss' as *;
+@use '@/assets/scss/variables.scss' as *;
+@use '@/assets/scss/mixins.scss' as *;
 
 .footer {
   width: 100%;
@@ -47,7 +47,7 @@
         }
 
         a {
-          color: $color-link;
+          color: $color-black;
           transition: all 0.4s;
 
           &:hover {
@@ -62,7 +62,7 @@
       font-size: $size-sm;
       
       transition: all 0.4s;
-      color: $color-link;
+      color: $color-black;
 
       &:hover {
         opacity: 0.8;

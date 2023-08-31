@@ -21,10 +21,10 @@ const handleMenu = () => {
         <nav :class="['navigation__content', { 'open': isMobile }]">
           <ul>
             <li>
-              <RouterLink to="/">Página inicial</RouterLink>
+              <RouterLink to="/" @click="handleMenu">Página inicial</RouterLink>
             </li>
             <li>
-              <RouterLink to="/sobre">Sobre</RouterLink>
+              <RouterLink to="/sobre" @click="handleMenu">Sobre</RouterLink>
             </li>
           </ul>
         </nav>
@@ -38,8 +38,8 @@ const handleMenu = () => {
 </template>
 
 <style lang="scss" scoped>
-@use '../assets/scss/variables.scss' as *;
-@use '../assets/scss/mixins.scss' as *;
+@use '@/assets/scss/variables.scss' as *;
+@use '@/assets/scss/mixins.scss' as *;
 
 @keyframes menu-animation {
   from {
@@ -87,7 +87,16 @@ const handleMenu = () => {
       font-size: $size-lg;
 
       a {
+        transition: all 0.4s;
         color: $color-white;
+
+        &:hover {
+          color: $color-link-secundary;
+        }
+      }
+
+      a.router-link-active {
+        color: $color-link-secundary;
       }
     }
 
@@ -112,7 +121,7 @@ const handleMenu = () => {
 
     z-index: 10;
     border-top: 1px solid rgba(255, 255, 255, 0.4);
-    background: rgba(248,141,250,1);
+    background: $color-link;
 
     animation: menu-animation 1s ease-in-out;
 
