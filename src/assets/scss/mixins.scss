@@ -1,0 +1,38 @@
+@use '../scss/variables.scss';
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+}
+
+@mixin background {
+  // background: rgb(247,120,250);
+  // background: linear-gradient(180deg, rgba(247,120,250,1) 7%, rgba(254,186,255,1) 37%);
+
+  background: rgb(247,120,250);
+  background: linear-gradient(180deg, rgba(247,120,250,1) 10%, rgba(254,186,255,1) 45%);
+}
+
+@mixin container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@mixin mobile {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
