@@ -43,7 +43,7 @@ const handleMenu = () => {
 
 @keyframes menu-animation {
   from {
-    left: 100%;
+    left: -100%;
   }
   to {
     left: 0%;
@@ -97,6 +97,7 @@ const handleMenu = () => {
 
       a.router-link-active {
         color: $color-link-secundary;
+        font-weight: 700;
       }
     }
 
@@ -123,7 +124,7 @@ const handleMenu = () => {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
     background: $color-link;
 
-    animation: menu-animation 1s ease-in-out;
+    animation: menu-animation 0.6s ease-in-out;
 
     ul {
       display: flex;
