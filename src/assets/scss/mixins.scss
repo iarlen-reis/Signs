@@ -6,11 +6,7 @@
 }
 
 @mixin background {
-  // background: rgb(247,120,250);
-  // background: linear-gradient(180deg, rgba(247,120,250,1) 7%, rgba(254,186,255,1) 37%);
-
-  background: rgb(247,120,250);
-  background: linear-gradient(180deg, rgba(247,120,250,1) 10%, rgba(254,186,255,1) 45%);
+  background-image: linear-gradient(to bottom, #57037a, #813799, #ab62ba, #d48ddc, #febaff);
 }
 
 @mixin container {
