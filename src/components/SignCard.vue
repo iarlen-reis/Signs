@@ -79,6 +79,7 @@
 
   p {
     font-size: $size-lg;
+    text-shadow: rgba($color: $color-link, $alpha: 0.30) 0px 3px 8px;
   }
 }
 
