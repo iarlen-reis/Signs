@@ -97,7 +97,6 @@ const handleMenu = () => {
 
       a.router-link-active {
         color: $color-link-secundary;
-        font-weight: 700;
       }
     }
 

@@ -18,12 +18,17 @@
   gap: $gap-1;
 
   span {
-    width: fit-content;
+    width: 218px;
+    text-align: center;
     font-size: $size-base;
     padding: 0.4rem 0.8rem;
     border-radius: 8px;
     color: $color-white;
     background: $color-link;
+
+    @include tablet {
+      width: fit-content;
+    }
   }
 
   h1 {
