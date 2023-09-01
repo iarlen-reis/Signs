@@ -9,7 +9,7 @@ import { RouterLink } from 'vue-router'
       Encontre a harmonia entre os astros e suas emoções!
     </p>
     <div class="home__links">
-      <RouterLink to="/signs"> Signos 🔭 </RouterLink>
+      <RouterLink to="/signos"> Signos 🌘 </RouterLink>
       <RouterLink to="/astrology"> Astralogia 💫 </RouterLink>
     </div>
   </div>
@@ -54,6 +54,7 @@ import { RouterLink } from 'vue-router'
     text-align: center;
     font-family: $font-title;
     font-size: $size-base;
+    font-weight: 600;
 
     padding: 0.8rem 0;
 
@@ -63,16 +64,26 @@ import { RouterLink } from 'vue-router'
 
     transition: all 0.4s;
 
-    &:hover {
-      opacity: 0.8;
-    }
-
     &:nth-child(1) {
       background: $color-link-tertiary;
+
+      &:hover {
+        background: $color-link-tertiary-hover;
+      }
     }
 
     &:nth-child(2) {
       background: $color-link-secundary;
+
+      &:hover {
+        background: $color-link-secundary-hover;
+      }
+    }
+  }
+
+  @include tablet {
+    a {
+      font-size: $size-lg;
     }
   }
 }

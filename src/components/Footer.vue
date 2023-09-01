@@ -60,7 +60,7 @@
 
     a {
       font-size: $size-sm;
-      
+      text-shadow: 1px 1px 1px $color-link;
       transition: all 0.4s;
       color: $color-black;
 
