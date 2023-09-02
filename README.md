@@ -1,7 +1,9 @@
+
 <img src="./src/assets/github-1.png" alt="Imagem da tela inicial do projeto">
 <img src="./src/assets/github-2.png" alt="Imagem da tela de signos do projeto">
 <img src="./src/assets/github-3.png" alt="Imagem do detalhes do signo Capricornio">
-### Signs
+
+# Signs
 
 <p>
     A aplicação de signos e horóscopos foi desenvolvida para praticar os conceitos do
