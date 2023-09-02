@@ -1,46 +1,45 @@
-# horoscope
+<img src="./src/assets/github-1.png" alt="Imagem da tela inicial do projeto">
+<img src="./src/assets/github-2.png" alt="Imagem da tela de signos do projeto">
+<img src="./src/assets/github-3.png" alt="Imagem do detalhes do signo Capricornio">
+### Signs
 
-This template should help get you started developing with Vue 3 in Vite.
+<p>
+    A aplicação de signos e horóscopos foi desenvolvida para praticar os conceitos do
+    vueJs. Ela foi inspirada na ideia da
+    <a href="https://www.twitch.tv/gaaaabiiiiiiiiii/" target="_blank">gaaaabiiiiiiiiii</a>
+    durante uma conversa na live do streamer
+    <a href="https://www.twitch.tv/antonydev" target="_blank">AntonyDev</a>.
+</p>
 
-## Recommended IDE Setup
+## Signs API
+<p>
+    O back-end da aplicação foi desenvolvido com o nodeJs utilizando o framework
+    <a href="https://fastify.dev/" target="_blank">Fastify</a>. É uma API REST, que utiliza o
+    banco de dados MongoDB, com o ORM
+    <a href="https://plexinc.github.io/papr/#/" target="_blank">Papr</a>.
+</p>
+<p>
+    No Github está disponivél a documentação completa da
+    <a href="https://github.com/iarlen-reis/signsAPI" target="_blank">API</a>, ela possui
+    endpoints para criação, listagem, atualização e remoção de signos. Foi utilizando também a
+    plataforma <a href="https://cloudinary.com/" target="_blank">Cloudinary</a> para armazenar
+    as imagens dos signos.
+</p>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Funcionalidades
+- [x] Listagem de signos na página.
+- [x] Exibição de detalhes de um signo.
+- [x] Cache das requisições de signos e detalhes do signo.
+- [ ] Testes unitários.
 
-## Type Support for `.vue` Imports in TS
+## Ferramentas
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+Ferramentas utilizadas no desenvolvimento.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+[@VueJs](https://vuejs.org/)
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+[@TypeScript](https://www.typescriptlang.org/)
 
-## Customize configuration
+[@Sass](https://sass-lang.com/)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+[@TanStack](https://tanstack.com/)
